@@ -1,0 +1,47 @@
+/* pages/usCenter/index.wxss */
+page{
+  background-color: #f2f2f2;
+}
+.us-img-box{
+  display: flex;
+  margin-bottom:20rpx;
+  background-color: #fff;
+  padding:60rpx 30rpx;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.us-img-box .box-user image{
+  width:150rpx;
+  height: 150rpx;
+  border-radius:100%; 
+}
+.us-img-box .box-user{
+  display: flex;
+
+}
+.us-img-box .icon-you1{
+    color: #fff  !important;
+}
+
+.us-img-box .box-user view{
+  display: flex;
+  flex-direction: column;
+  margin-left:20rpx;
+  justify-content: center;
+  align-content: center;
+}
+.glup_box{
+  background-color: #fff;
+  display: flex;
+  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  padding:20rpx;
+  align-items: center;
+}
+/* .glup_box view:first-child  text{
+  margin-left:15rpx;
+} */
+.glup_box icon{
+    margin-top: -10rpx;
+}

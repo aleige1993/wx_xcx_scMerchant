@@ -1,0 +1,10 @@
+/* pages/login/resetPwd.wxss */
+
+page{
+  background-color: #f2f2f2;
+}
+.step_panl{
+  padding:30rpx 60rpx;
+  background-color: #fff;
+  margin-bottom: 30rpx;
+}

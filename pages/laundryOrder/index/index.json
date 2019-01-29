@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-tab": "/ui-plugins/vant/tab/index",
+    "van-tabs": "/ui-plugins/vant/tabs/index",
+    "van-icon": "/ui-plugins/vant/icon/index"
+  }
+}

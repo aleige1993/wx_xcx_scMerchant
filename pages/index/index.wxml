@@ -1,0 +1,97 @@
+<!--index.wxml-->
+<view class="dashboard">
+    <view class='laundry_box'>
+        <van-search value="{{ value }}" placeholder="请输入衣袋号码/扫描二维码（条形码）" use-action-slot bind:search="onSearch">
+            <view slot="action" bind:tap="onSearch">搜索</view>
+        </van-search>
+        <image src='/static/images/error.png'></image>
+    </view>
+    <view class='laundy_list'>
+        <van-tabs active="{{ 0 }}" bind:change="onChange">
+            <van-tab title="待清洗"></van-tab>
+            <van-tab title="已洗带还"></van-tab>
+        </van-tabs>
+        <view class='list_item'>
+            <view class='item_box'>
+                <view class='order_panl'>
+                    <view class='order_title'>
+                        <view>待洗条码：97866009</view>
+                        <view>用户电话：13776879998</view>
+                        <view>小站地址：江北区观影桥万科时代1号门点</view>
+                        <view>小站电话：023-979437940</view>
+                    </view>
+                    <view class='order_box'>
+                        <view class='move_box'>
+                            <image src='/static/images/error.png'></image>
+                            <view class='order_vim'>
+                                <view>西装</view>
+                                <view class='c-red'>￥28.00</view>
+                            </view>
+                            <view class='order_num'>×4</view>
+                        </view>
+                        <view class='move_box'>
+                            <image src='/static/images/error.png'></image>
+                            <view class='order_vim'>
+                                <view>西装</view>
+                                <view class='c-red'>￥28.00</view>
+                            </view>
+                            <view class='order_num'>×4</view>
+                        </view>
+                    </view>
+                    <view class='order_footer'>
+                        <view class='font-w6'>已付金额：
+                            <text class='c-red'>¥180.00</text>
+                        </view>
+                        <view class='but_box'>
+                            <button class='but_question'>加入洗衣</button>
+                        </view>
+                    </view>
+                </view>
+                 <view class='order_panl'>
+                    <view class='order_title'>
+                        <view>待洗条码：97866009</view>
+                        <view>用户电话：13776879998</view>
+                        <view>小站地址：江北区观影桥万科时代1号门点</view>
+                        <view>小站电话：023-979437940</view>
+                    </view>
+                    <view class='order_box'>
+                        <view class='move_box'>
+                            <image src='/static/images/error.png'></image>
+                            <view class='order_vim'>
+                                <view>西装</view>
+                                <view class='c-red'>￥28.00</view>
+                            </view>
+                            <view class='order_num'>×4</view>
+                        </view>
+                        <view class='move_box'>
+                            <image src='/static/images/error.png'></image>
+                            <view class='order_vim'>
+                                <view>西装</view>
+                                <view class='c-red'>￥28.00</view>
+                            </view>
+                            <view class='order_num'>×4</view>
+                        </view>
+                    </view>
+                    <view class='order_footer'>
+                        <view class='font-w6'>已付金额：
+                            <text class='c-red'>¥180.00</text>
+                        </view>
+                        <view class='but_box'>
+                            <button class='but_confirm'>归还</button>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+    </view>
+</view>
+
+<view class='layer' wx:if="{{isShow}}"></view>
+<view class='getInfo_box' wx:if="{{isShow}}">
+    <view class='title_p'>颂车小二小程序</view>
+    <image src='/static/images/error.png'></image>
+    <view class='but_box'>
+        <button class='backg-grad shadow-just' open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">授权微信用户信息</button>
+    </view>
+</view>

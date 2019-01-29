@@ -1,0 +1,48 @@
+/* pages/login/index.wxss */
+page{
+  background-color: #f2f2f2;
+}
+.logo{
+  text-align: center;
+  margin:50rpx 0;
+}
+.logo image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius:100%;
+  background-color: #fff; 
+}
+.login-box{
+ background-color: #fff;
+ border:1px solid #eee;
+ width:90%;
+ margin:auto; 
+ padding:0 30rpx;
+}
+
+.login-box .login-cell{
+   border-bottom: 1px solid #eee;
+}
+.login-box .login-cell:last-child{
+  border-bottom:none; 
+}
+.login-box .login-cell icon{
+  font-size:40rpx;
+  margin-top: 6rpx;
+}
+.login-box .login-cell{
+  display: flex;
+  padding: 20rpx 0;
+  align-content: center;
+}
+.login-box .login-cell input{
+  padding-left: 20rpx;
+  height:70rpx;
+  flex: 1;
+}
+.findpwd{
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}

@@ -1,0 +1,92 @@
+/**index.wxss**/
+view,text{
+    color: #666;
+}
+page {
+  background: #f2f2f2;
+}
+.banner, .header-news, .sales-data, .dashboard-grid {
+  margin-bottom: 10rpx;
+}
+.order_panl{
+  margin-top:20rpx;
+background-color: #fff;
+}
+.order_title{
+  padding:20rpx 30rpx;
+  border-top:1px solid #eee;
+  border-bottom: 1px solid #eee;
+  color: #666;
+}
+.order_title view{
+  margin-bottom: 10rpx;
+}
+.order_title view:last-child{
+  margin-bottom: 0;
+}
+.order_box{
+
+}
+.move_box{
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding:30rpx;
+}
+.move_box:last-child{
+  border-bottom: 0;
+}
+.move_box image{
+  width:150rpx;
+  height:200rpx;
+}
+.move_box view{
+  display: flex;
+}
+.move_box view.order_vim{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-left: 20rpx;
+}
+.move_box view.order_vim view:first-child{
+    font-weight: 600;
+}
+
+.move_box view.order_num{
+  align-items: center;
+}
+.order_footer{
+  display: flex;
+  padding:20rpx 30rpx;
+  justify-content:space-between;
+  align-items: center;
+   border-top: 1px  solid #eee;
+  border-bottom: 1px  solid #eee;
+}
+.but_box{
+    display: flex;
+}
+.but_box button{
+    margin-left: 30rpx;
+}
+.but_box .but_question{
+    background-color: #06a5ff;
+}
+.but_box .but_cancel{
+    background-color: #ff7b20;
+}
+.but_box .but_payment{
+    background-color: #ff4c5e;
+}
+.but_box  .but_confirm{
+    background-color: #ea857d;
+}
+.order_footer button{
+  color: #fff;
+  font-size: 12px;
+}
+.order_soso{
+
+}

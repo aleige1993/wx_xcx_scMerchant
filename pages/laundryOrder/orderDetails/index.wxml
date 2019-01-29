@@ -1,0 +1,58 @@
+<!--pages/laundryOrder/index.wxml-->
+<view class='laundryOrder'>
+    <view class='order-panl'>
+        <van-tabs animated bind:click="getIndex">
+            <van-tab title="全部">
+                <view class="section">
+                    <scroll-view style="height:{{scrollHeight}}" scroll-y scroll-top="{{scrollTop}}" upper-threshold="1px" lower-threshold="10px" bindscrolltolower="binddown" bindscrolltoupper="bindtop">
+                        <view class='order_panl'>
+                            <view class='order_title'>
+                                <view>订单编号：11977240</view>
+                                <view>
+                                    <text class='c-red'>等待付款</text>
+                                </view>
+                            </view>
+                            <view class='order_box'>
+                                <view class='move_box'>
+                                    <image src='../../../static/images/error.png'></image>
+                                    <view class='order_vim'>
+                                        <view>西装</view>
+                                        <view class='c-red'>￥28.00</view>
+                                    </view>
+                                    <view class='order_num'>×4</view>
+                                </view>
+                                <view class='move_box'>
+                                    <image src='../../../static/images/error.png'></image>
+                                    <view class='order_vim'>
+                                        <view>西装</view>
+                                        <view class='c-red'>￥28.00</view>
+                                    </view>
+                                    <view class='order_num'>×4</view>
+                                </view>
+                            </view>
+                            <view class='order_footer'>
+                                <view class='font-w6'>应付金额：
+                                    <text class='c-red'>¥180.00</text>
+                                </view>
+                              <view class='but_box'>
+                                      <button class='but_cancel'>取消订单</button>
+                                      <button class='but_payment'>立即付款</button>
+                                      <!-- <button class='but_question'>清洗问题</button>
+                                      <button class='but_confirm'>确认取衣</button>
+                                      <button class='but_payment'>再次购买</button>
+                                      <button class='but_payment'>重新下单</button>
+                                       <button class='but_cancel'>删除订单</button> -->
+                              </view>
+                            </view>
+                        </view>
+                    </scroll-view>
+                </view>
+            </van-tab>
+            <van-tab title="待付款">内容 2</van-tab>
+            <van-tab title="待签收">内容 3</van-tab>
+            <van-tab title="已完成">内容 4</van-tab>
+            <van-tab title="已取消">内容 5</van-tab>
+        </van-tabs>
+    </view>
+    <van-toast id="van-toast" />
+</view>

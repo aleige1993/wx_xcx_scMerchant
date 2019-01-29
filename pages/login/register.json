@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+        "van-steps": "/ui-plugins/vant/steps/index",
+        "van-field": "/ui-plugins/vant/field/index",
+        "van-cell-group": "/ui-plugins/vant/cell-group/index",
+        "van-button": "/ui-plugins/vant/button/index",
+        "van-checkbox": "/ui-plugins/vant/checkbox/index",
+        "van-checkbox-group": "/ui-plugins/vant/checkbox-group/index"
+    }
+}

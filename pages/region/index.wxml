@@ -1,0 +1,29 @@
+<!--pages/region/index.wxml-->
+<view>
+    <view class='flex-between loginInfo'>
+        <view class=''>登录手机号</view>
+        <view>18033451849</view>
+    </view>
+    
+    <view >
+        <view class='flex-between loginInfo'>
+             <view class=''>洗衣范围</view>
+            <view bindtap="onChangeShow"><icon class='iconfont icon-tianjia1 ' ></icon></view>
+        </view>
+        <view class='address'>
+            <view> 江北区-观音桥一号店</view>
+            <view><icon class='iconfont icon-jiufuqianbaoicon05 '></icon></view>
+        </view>
+         <view class='address'>
+            <view> 江北区-观音桥一号店</view>
+            <view><icon class='iconfont icon-jiufuqianbaoicon05 '></icon></view>
+        </view>
+        <view class='address'>
+            <view> 江北区-观音桥一号店</view>
+            <view><icon class='iconfont icon-jiufuqianbaoicon05 '></icon></view>
+        </view>
+    </view>
+</view>
+<van-popup show="{{ show }}" safe-area-inset-bottom position="bottom" bind:close="onClose">
+     <van-picker columns="{{ columns }}" show-toolbar="{{true}}"  confirm-button-text="确定"  cancel-button-text="取消" bind:change="onPicker"  value-key="name" bind:cancel="onClose" bind:confirm="onConfirm"  active-class="active"/> 
+</van-popup>

@@ -1,0 +1,73 @@
+<!--pages/laundryOrder/setTlement/index.wxml-->
+<view class='main'>
+    <view class='detaTitle'>
+        <view class='order_panl'>
+            <view class='waiter'>
+                <view class='c-333 font-w6'>小站选择</view>
+                <view>
+                    <picker bindchange="shoprChange" value="{{shopIndex}}" range="{{shopArr}}">
+                        <view class="picker">
+                            {{shopArr[shopIndex] ? shopArr[shopIndex] : '请选择小站'}}
+                            <icon class='iconfont icon-you1'></icon>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class='order_box'>
+                <view class='move_box'>
+                    <image src='../../../static/images/error.png'></image>
+                    <view class='order_vim'>
+                        <view>西装</view>
+                        <view class='c-red'>￥28.00</view>
+                    </view>
+                    <view class='order_num'>×4</view>
+                </view>
+                <view class='move_box'>
+                    <image src='../../../static/images/error.png'></image>
+                    <view class='order_vim'>
+                        <view>西装</view>
+                        <view class='c-red'>￥28.00</view>
+                    </view>
+                    <view class='order_num'>×4</view>
+                </view>
+                <view class='order_price'>
+                    <view class='v-li'>
+                        <text>订单总价</text>
+                        <text>￥84.00</text>
+                    </view>
+                    <view class='v-li'>
+                        <text>服务费用</text>
+                        <text>￥0.00</text>
+                    </view>
+                    <view class='v-li'>
+                        <text>活动优惠</text>
+                        <text>￥4.00</text>
+                    </view>
+                     <view class='v-li top-border'>
+                        <text>实付</text>
+                        <text class='c-red'>￥1.00</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class='ptenm_box'>
+            <view class='v-li'>
+                <textarea class='rexrArea' placeholder='备注：特殊要求请与客服协商联系'></textarea>
+            </view>
+        </view>
+
+    </view>
+</view>
+
+  <view class='sumbit_box'>
+        <view class='sumbit_pirce'>
+                  <view class='sumbit_data'>
+                        <view class='c-red'>￥60.00</view>
+                        <view class='c-ccc'>已购买￥84.00 优惠￥24.00</view>
+                  </view>
+        </view>
+
+        <view class='sumbit_but'>
+                <view class='r-barg'>下单</view>
+        </view>
+    </view>

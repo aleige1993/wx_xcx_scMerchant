@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+      "van-search": "/ui-plugins/vant/search/index",
+        "van-tab": "/ui-plugins/vant/tab/index",
+        "van-tabs": "/ui-plugins/vant/tabs/index",
+        "van-toast": "/ui-plugins/vant/toast/index"
+  }
+}

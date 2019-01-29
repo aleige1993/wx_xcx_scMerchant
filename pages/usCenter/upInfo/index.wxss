@@ -1,0 +1,11 @@
+/* pages/usCenter/upInfo/index.wxss */
+@import '/pages/login/resetPwd.wxss';
+.tips_box{
+    width: 90%;
+    margin: 50rpx auto;
+    color: #999;
+}
+
+.tips_box .p2{
+    font-size: 12px;
+}

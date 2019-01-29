@@ -1,0 +1,13 @@
+/* pages/laundryOrder/searOrder.wxss */
+@import '/pages/laundryOrder/orderDetails/index.wxss';
+
+.order_soso{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index:10;
+}
+.order-panl{
+  margin-top:100rpx;
+}

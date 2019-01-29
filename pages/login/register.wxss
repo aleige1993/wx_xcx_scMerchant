@@ -1,0 +1,24 @@
+/* pages/login/register.wxss */
+.chebox_box{
+    display: flex;
+}
+.agre_box{
+    display: flex;
+    margin-left: 20rpx;
+}
+.chebox_box{
+    padding:20rpx 30rpx;
+}
+.newlogin{
+    text-align: center;
+}
+.logo_box{
+    text-align: center;
+}
+.logo{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius:100%; 
+    border: 1px solid #eee;
+    margin: 100rpx auto;
+}

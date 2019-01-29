@@ -1,0 +1,181 @@
+/**app.wxss**/
+@import '/static/fonts/iconfont.wxss';
+
+navigator,button,view,input,text,icon,input,label,textarea,radio,switch,:checked,form,picker,rich-text,image{
+ font-family:Helvetica Neue,Helvetica,Roboto,Segoe UI,Arial,sans-serif;
+ box-sizing: border-box;
+ font-size:28rpx;
+}
+button{
+  margin:0;
+}
+button::after{
+  border: none;
+} 
+.container{
+  width: 100%;
+}
+input{
+  color: #333;
+}
+view{
+  overflow:initial;
+}
+.flex{
+  display:flex;
+}
+/* 颜色 */
+.c-green {
+    color: #34BD29;
+} 
+.c-purple {
+    color: #6530E0;
+}
+.c-999{
+    color: #999999;
+}
+.c-ccc{
+  color: #ccc;
+}
+.c-333{
+      color: #333 !important;
+}
+.c-666{
+    color: #666666;
+}
+.c-bf{
+  color: #bfbfbf;
+}
+.c-blue{
+  color: #3984ff;
+}
+.c-red{
+  color: #ea857d;
+}
+.b-blue{
+  border:1rpx solid #3984ff;
+}
+.backg-blue{
+  background-color:#3984ff !important;
+}
+.backg-gray2{
+  background-color:#d4d9eb !important;
+}
+.c-gray{
+  color: #e5e5e5;
+}
+.c-gray2{
+  color: #d4d9eb;
+}
+.b-gray-bottom{
+  border-bottom:1rpx solid #e5e5e5;
+}
+.backg-gray{
+  background-color:#e5e5e5;
+}
+.backg-grad{
+     background-image: linear-gradient(45deg, #5578f6, #35e1c8) !important; 
+     color: #fff !important;
+     border: 0 !important;
+}
+.backg-grad2{
+     background-image: linear-gradient(45deg, #ea857d, #e1b260) !important; 
+     color: #fff !important;
+     border: 0 !important;
+}
+
+.border-gray{
+    border: 1px solid #d4d9eb !important;
+}
+.border-violet{
+    border: 1px solid #5f8aff !important;
+}
+.border-powder{
+    border: 1px solid #ff4c5e !important;
+}
+.border-yellow{
+    border: 1px solid #ff7b20 !important;
+}
+.c-violet{
+    color: #5f8aff !important;
+}
+.c-powder{
+      color: #ff4c5e !important;
+}
+.c-yellow {
+    color: #ff7b20;
+}
+.shadow-just{
+    box-shadow:10rpx 10rpx 10rpx #ccc; 
+}
+.icon-you1{
+    color: #5578f6 !important;
+}
+.font-w6{
+    font-weight: 600;
+}
+/* 省略号... */
+.overflowfont{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.overflowfont2{
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+}
+.overflowfont3{
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+overflow: hidden;
+}
+
+
+
+/* 公共样式 */
+.w-row{
+  width: 100%;
+}
+
+.w-with90{
+  width:90%;
+  margin:0 auto;
+}
+
+  /* input 默认颜色修改 */
+  .phcolor{
+    color: #bfbfbf;
+  }
+  /*模态层*/
+.layer{
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hr{
+  width: 100%;
+  height: 12rpx;
+  background-color: #f7f7f7; 
+  margin-top: 58rpx;
+}
+.marig-primary{
+  margin:30rpx 0;
+}
+.primary{
+  width: 90%;
+  margin:0 5%;
+}
+
+.fixed-bottom{
+  position: fixed;
+  bottom: 0;
+  width:100%;
+}

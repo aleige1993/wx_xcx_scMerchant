@@ -1,0 +1,54 @@
+/* pages/laundryOrder/setTlement/index.wxss */
+@import '/pages/laundryOrder/orderDetails/details.wxss';
+
+.sumbit_box{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 30rpx; */
+    padding-left: 30rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:#fff;
+}
+.sumbit_pirce{
+    display: flex;
+    align-items: center;
+}
+.sumbit_but{
+    display: flex;
+    height: 100rpx;
+}
+.sumbit_but view{
+    width:180rpx;
+    line-height: 100rpx;
+    text-align: center;
+    color: #fff;
+}
+.sumbit_data{
+    margin-left: 10rpx;
+}
+.y-barg{
+    background-color: #ff7b20;
+}
+.r-barg{
+    background-color: #ff4c5e;
+}
+.waiter{
+    border-bottom: 1px solid #eee;
+}
+.top-border{
+    border-top:1px solid #eee; 
+    padding-top: 20rpx;
+}
+.rexrArea{
+    border: 1px solid #eee;
+    height: 160rpx;
+    width: 100%;
+    padding: 20rpx;
+    border-radius:10rpx; 
+}
+.top-border .c-red{
+    color: #ea857d !important;
+}

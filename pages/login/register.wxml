@@ -1,0 +1,30 @@
+<!--pages/login/register.wxml-->
+<view>
+    <view class='logo_box'>
+        <image class='logo' src='../../static/images/logo.png'></image>
+    </view>
+    <view class='reg_panl'>
+        <form bindsubmit="formSubmit">
+            <van-cell-group>
+                <van-field value="{{ mobile }}" clearable placeholder="请输入手机号"  name="mobile" data-name="mobile" bind:change="getChange" />
+                <van-field value="{{ code }}" center clearable placeholder="请输入短信验证码" border="{{ false }}" use-button-slot name="code"  data-name="code" bind:change="getChange">
+                    <van-button wx:if="{{ isShow }}" slot="button" size="small" type="primary" bind:click="onCaptcha">发送验证码</van-button>
+                     <van-button wx:else slot="button"  disabled  size="small" type="primary">{{tiemNum}}秒后重发</van-button>
+                </van-field>
+                <van-field value="{{ oldPaswd }}" clearable type="password" placeholder="请设置6-20位登录密码" name="oldPaswd"  data-name="oldPaswd" bind:change="getChange"/>
+                <van-field value="{{ newPaswd }}" clearable type="password" data-name="newPaswd" bind:change="getChange" placeholder="请再次输入登录密码" name="newPaswd" />
+            </van-cell-group>
+            <view class='chebox_box'>
+                <van-checkbox value="{{ checked }}" bind:change="onChange"></van-checkbox>
+                <view class='agre_box'>同意《
+                    <navigator class='c-blue'>用户服务协议</navigator>》</view>
+            </view>
+            <view class='marig-primary'>
+                <button size="normal" type="primary" class="primary backg-grad shadow-just" form-type="submit">注册</button>
+            </view>
+            <view class='newlogin'>
+                <navigator class='c-blue' url="/pages/login/index">已有账户，立即登录</navigator>
+            </view>
+        </form>
+    </view>
+</view>
