@@ -2,6 +2,7 @@
   "usingComponents": {
     "van-cell-group": "/ui-plugins/vant/cell-group/index",
     "van-cell": "/ui-plugins/vant/cell/index",
-    "van-button": "/ui-plugins/vant/button/index"
+    "van-button": "/ui-plugins/vant/button/index",
+    "van-dialog": "/ui-plugins/vant/dialog/index"
   }
 }

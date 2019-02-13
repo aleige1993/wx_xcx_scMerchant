@@ -4,47 +4,37 @@
         <view class='box-user '>
             <image src='../../static/images/error.png'></image>
             <view>
-                <text  class='font-w6'>Windir</text>
-                <!-- <text>18033441984</text> -->
+                <text  class='font-w6'>{{username}}</text>
+                <!-- <text></text> -->
             </view>
         </view>
-        <icon class='iconfont icon-you1'></icon>
+        <!-- <icon class='iconfont icon-you1'></icon> -->
     </view>
 
     <view>
         <navigator class='glup_box'>
             <view>
                 <!-- <icon class='iconfont icon-ico_meiyoushuju'></icon> -->
-                <text>我的快递</text>
+                <text>洗衣范围</text>
             </view>
-                <icon class='iconfont icon-you1'></icon>
+                <!-- <icon class='iconfont icon-you1'></icon> -->
         </navigator>
-       <navigator class='glup_box'>
-            <view>
-                <!-- <icon class='iconfont icon-ico_meiyoushuju'></icon> -->
-                <text>洗衣订单</text>
-            </view>
-                <icon class='iconfont icon-you1'></icon>
-        </navigator>
-       <navigator class='glup_box'>
-            <view>
-                <!-- <icon class='iconfont icon-ico_meiyoushuju'></icon> -->
-                <text>学车申请</text>
-            </view>
-                <icon class='iconfont icon-you1'></icon>
-         </navigator>
+       <view class='glup_box'>
+            <text>洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围</text>
+        </view>
+       <view class='glup_box'>
+            <text>洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围</text>
+        </view>
 
-        <navigator class='glup_box'>
-            <view>
-                <!-- <icon class='iconfont icon-ico_meiyoushuju'></icon> -->
-                <text>修改手机</text>
-            </view>
-                <icon class='iconfont icon-you1'></icon>
-        </navigator>
+        <view class='glup_box'>
+            <text>洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围</text>
+        </view>
     </view>
 
-    <!-- <view class='marig-primary'>
-        <van-button size="normal" type="primary" custom-class="primary">退出账号</van-button>
-    </view> -->
+   <view class='marig-primary'>
+    <button bindtap='loginout' class='button' size="normal" type="primary" custom-class="primary">退出账号</button>
+  </view>
 
 </view>
+
+<van-dialog id="van-dialog" />

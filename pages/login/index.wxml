@@ -7,20 +7,21 @@
          <view  class='login-box'>
             <view  class='login-cell'>
                 <icon class='iconfont icon-shouji01'></icon>
-                <input type='text' placeholder='手机号码'  name="account" value="13500353625"></input>
+                <input type='text' placeholder='手机号码'  name="account" value="18888888889"></input>
             </view>
             <view class='login-cell'>
                 <icon class='iconfont icon-mima'></icon>
-                <input password placeholder='输入密码' name="password" value='654321'></input>
+                <input password placeholder='输入密码' name="password" value='111111'></input>
             </view>
             </view>
             <view class='marig-primary'>
-                <button class="primary  backg-grad shadow-just" form-type='submit' size="normal" >登录</button>
+                <button  wx:if="{{!submitLoading}}" class="primary  backg-grad shadow-just" form-type='submit' size="normal" >登录</button>
+                 <button wx:else class="primary  backg-grad shadow-just" size="normal" ><van-loading size="20px" type="spinner" /></button>
             </view>
     </form>
 
-    <view class='findpwd'>
+    <!-- <view class='findpwd'>
 	    <navigator class='c-blue'>注册新密码</navigator>
         <navigator class='c-blue'>找回密码</navigator>
-    </view>
+    </view> -->
 </view>

@@ -1,12 +1,34 @@
 {
-    "pages": [
-        "pages/region/index",
-        "pages/index/index"
+  "pages": [
+    "pages/index/index",
+    "pages/login/index",
+    "pages/usCenter/index",
+    
+    "pages/usCenter/region/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "商家服务",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath": "/static/images/tab_home_b.png",
+        "iconPath": "/static/images/tab_home_a.png"
+      },
+      {
+        "pagePath": "pages/usCenter/index",
+        "text": "我的",
+        "selectedIconPath": "/static/images/tab_user_b.png",
+        "iconPath": "/static/images/tab_user_a.png"
+      }
     ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "商家服务",
-        "navigationBarTextStyle": "black"
-    }
+    "color": "#BFBFBF",
+    "selectedColor": "#3984ff",
+    "borderStyle": "#e5e5e5"
+  }
 }

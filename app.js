@@ -11,17 +11,17 @@ App({
         this.WxValidate = WxValidate;
 
         // 展示本地存储能力
-        var logs = wx.getStorageSync('logs') || []
-        logs.unshift(Date.now())
-        wx.setStorageSync('logs', logs)
-        this.utils.screenSize();
+        // var logs = wx.getStorageSync('logs') || []
+        // logs.unshift(Date.now())
+        // wx.setStorageSync('logs', logs)
+        // this.utils.screenSize();
         // 判断是否登录or是否点击获取权限
-        let wxInfo = this.UserLogin.get('wxUserInfo');
-        if (wxInfo == "") {
-            wx.switchTab({
-                url: '/pages/index/index',
-            })
-        }
+        // let wxInfo = this.UserLogin.get('wxUserInfo');
+        // if (wxInfo == "") {
+        //     wx.switchTab({
+        //         url: '/pages/index/index',
+        //     })
+        // }
     },
     globalData: {
         userInfo: null

@@ -1,10 +1,11 @@
 <!--index.wxml-->
 <view class="dashboard">
     <view class='laundry_box'>
-        <van-search value="{{ value }}" placeholder="请输入衣袋号码/扫描二维码（条形码）" use-action-slot bind:search="onSearch">
+        <van-search value="{{ searchValue }}" placeholder="请输入衣袋号码/扫描二维码（条形码）"
+         use-action-slot bind:search="onSearch" bind:change="onSearchChange">
             <view slot="action" bind:tap="onSearch">搜索</view>
         </van-search>
-        <image src='/static/images/error.png'></image>
+        <image bindtap='scanCode' src='/static/images/error.png'></image>
     </view>
     <view class='laundy_list'>
         <van-tabs active="{{ 0 }}" bind:change="onChange">
@@ -87,11 +88,11 @@
     </view>
 </view>
 
-<view class='layer' wx:if="{{isShow}}"></view>
+<!-- <view class='layer' wx:if="{{isShow}}"></view>
 <view class='getInfo_box' wx:if="{{isShow}}">
     <view class='title_p'>颂车小二小程序</view>
     <image src='/static/images/error.png'></image>
     <view class='but_box'>
         <button class='backg-grad shadow-just' open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">授权微信用户信息</button>
     </view>
-</view>
+</view> -->
