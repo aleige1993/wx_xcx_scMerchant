@@ -85,18 +85,23 @@ Page({
 
   submitOrderStatus(status, msg, orderNo) {
     let _this = this;
+    wx.showLoading({
+      title: '',
+      mask: true
+    });
     app.Formdata.post('/openapi/express/wechatapplet/express/wash/order/editStatus', {
       status,
       orderNo
     }, function (res) {
       if (res.success && res.success === 'true') {
-        console.log(msg);
-        app.Tools.showToast(msg);
+        // console.log(msg);
         _this.setData({
           "searchForm.page": 1,
           'orderList': []
         })
         _this.loadOrderList();
+        wx.hideLoading();
+        app.Tools.showToast(msg, 'success');
       }
     });
   },

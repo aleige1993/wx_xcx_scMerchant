@@ -1,61 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="640e4dc5-8b45-4100-8ff7-8bc3c987cece" name="默认" comment="加入登录  个人中心首页 洗衣扫码功能">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/index/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/index/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/index/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/index/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/orderDetails/details.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/orderDetails/details.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/orderDetails/details.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/orderDetails/details.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/orderDetails/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/orderDetails/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/orderDetails/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/orderDetails/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/orderDetails/searOrder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/orderDetails/searOrder.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/orderDetails/searOrder.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/orderDetails/searOrder.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/payMent/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/payMent/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/payMent/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/payMent/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/payMent/resultMsg/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/payMent/resultMsg/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/payMent/resultMsg/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/payMent/resultMsg/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/setTlement/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/setTlement/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/setTlement/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/setTlement/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/shoppCart/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/shoppCart/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/shoppCart/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/laundryOrder/shoppCart/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/myExpress/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/myExpress/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/myExpress/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/myExpress/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/schoolCar/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/schoolCar/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/schoolCar/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/schoolCar/index.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/usCenter/upInfo/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/usCenter/upInfo/index.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/usCenter/upInfo/index.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/usCenter/upInfo/index.wxss" afterPath="" />
+    <list default="true" id="640e4dc5-8b45-4100-8ff7-8bc3c987cece" name="默认" comment="洗衣订单列表">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.json" afterPath="$PROJECT_DIR$/app.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.wxss" afterPath="$PROJECT_DIR$/app.wxss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/index.js" afterPath="$PROJECT_DIR$/config/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/index/index.js" afterPath="$PROJECT_DIR$/pages/index/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/index/index.json" afterPath="$PROJECT_DIR$/pages/index/index.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/index/index.wxml" afterPath="$PROJECT_DIR$/pages/index/index.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/index/index.wxss" afterPath="$PROJECT_DIR$/pages/index/index.wxss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/usCenter/index.js" afterPath="$PROJECT_DIR$/pages/usCenter/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/usCenter/index.wxml" afterPath="$PROJECT_DIR$/pages/usCenter/index.wxml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -161,7 +114,7 @@
       <updated>1548742587067</updated>
       <workItem from="1548742588420" duration="41000" />
       <workItem from="1550043791333" duration="1516000" />
-      <workItem from="1550123093332" duration="982000" />
+      <workItem from="1550123093332" duration="1621000" />
     </task>
     <task id="LOCAL-00001" summary="加入登录  个人中心首页 洗衣扫码功能">
       <created>1550043852573</created>
@@ -170,11 +123,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550043852573</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="洗衣订单列表">
+      <created>1550128770718</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1550128770718</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2539000" />
+    <option name="totallyTimeSpent" value="3178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -205,7 +165,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="加入登录  个人中心首页 洗衣扫码功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入登录  个人中心首页 洗衣扫码功能" />
+    <MESSAGE value="洗衣订单列表" />
+    <option name="LAST_COMMIT_MESSAGE" value="洗衣订单列表" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

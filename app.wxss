@@ -177,10 +177,10 @@ overflow: hidden;
 .marig-primary .button.disabled{
   background: #D2D2D2;
 }
-.primary{
+/* .primary{
   width: 90%;
   margin:0 5%;
-}
+} */
 
 .fixed-bottom{
   position: fixed;

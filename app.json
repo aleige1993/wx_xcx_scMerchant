@@ -2,8 +2,7 @@
   "pages": [
     "pages/login/index",
     "pages/index/index",
-    "pages/usCenter/index",
-    "pages/usCenter/region/index"
+    "pages/usCenter/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

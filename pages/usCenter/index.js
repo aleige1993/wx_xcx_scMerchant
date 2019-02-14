@@ -8,7 +8,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    username: ''
+    username: '',
+    stationList: []
   },
 
   loginout() {
@@ -34,6 +35,14 @@ Page({
     this.setData({
       username: app.UserLogin.get('userInfo').mobile
     })
+    let _this = this;
+    app.Formdata.get('/openapi/express/wechatapplet/express/station/queryForServer', {}, function(res) {
+      if (res.success && res.success === 'true') {
+        _this.setData({
+          stationList: res.data
+        })
+      }
+    });
   },
 
   /**

@@ -1,38 +1,31 @@
 <!--pages/usCenter/index.wxml-->
 <view>
-    <view class='us-img-box backg-grad'>
-        <view class='box-user '>
-            <image src='../../static/images/error.png'></image>
-            <view>
-                <text  class='font-w6'>{{username}}</text>
-                <!-- <text></text> -->
-            </view>
-        </view>
-        <!-- <icon class='iconfont icon-you1'></icon> -->
+  <view class='us-img-box backg-grad'>
+    <view class='box-user '>
+      <image src='../../static/images/error.png'></image>
+      <view>
+        <text class='font-w6'>{{username}}</text>
+        <!-- <text></text> -->
+      </view>
     </view>
+    <!-- <icon class='iconfont icon-you1'></icon> -->
+  </view>
 
-    <view>
-        <navigator class='glup_box'>
-            <view>
-                <!-- <icon class='iconfont icon-ico_meiyoushuju'></icon> -->
-                <text>洗衣范围</text>
-            </view>
-                <!-- <icon class='iconfont icon-you1'></icon> -->
-        </navigator>
-       <view class='glup_box'>
-            <text>洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围</text>
-        </view>
-       <view class='glup_box'>
-            <text>洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围</text>
-        </view>
-
-        <view class='glup_box'>
-            <text>洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围洗衣范围</text>
-        </view>
+  <view>
+    <navigator class='glup_box'>
+      <view>
+        <!-- <icon class='iconfont icon-ico_meiyoushuju'></icon> -->
+        <text>洗衣范围</text>
+      </view>
+      <!-- <icon class='iconfont icon-you1'></icon> -->
+    </navigator>
+    <view wx:for="{{stationList}}" wx:key="{{index}}" class='glup_box'>
+      <text>{{item.stationName}} - {{item.address}}</text>
     </view>
+  </view>
 
-   <view class='marig-primary'>
-    <button bindtap='loginout' class='button' size="normal" type="primary" custom-class="primary">退出账号</button>
+  <view class='marig-primary'>
+    <button bindtap='loginout' class="primary  backg-grad shadow-just" form-type='submit' size="normal">退出账号</button>
   </view>
 
 </view>

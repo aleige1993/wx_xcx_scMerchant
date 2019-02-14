@@ -7,7 +7,7 @@
     <image class="scan-code" bindtap='scanCode' src='/static/images/error.png'></image>
   </view>
   <view class='laundy_list'>
-    <van-tabs active="{{ tabStatusActive }}" bind:change="tabStatus">
+    <van-tabs active="{{ tabStatusActive }}" bind:click="tabStatus">
       <van-tab data-status="3" title="待清洗"></van-tab>
       <van-tab data-status="4" title="已洗待还"></van-tab>
     </van-tabs>
