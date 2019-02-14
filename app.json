@@ -1,9 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/login/index",
+    "pages/index/index",
     "pages/usCenter/index",
-    
     "pages/usCenter/region/index"
   ],
   "window": {

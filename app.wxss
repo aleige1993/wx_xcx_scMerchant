@@ -187,3 +187,17 @@ overflow: hidden;
   bottom: 0;
   width:100%;
 }
+
+.null-data{
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+}
+.null-data.margin-top {
+  margin-top: 40%;
+}
+
+.null-data icon{
+    font-size: 100px;
+    color: #999;
+}

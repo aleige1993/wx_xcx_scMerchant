@@ -1,4 +1,5 @@
 {
+  "enablePullDownRefresh": false,
   "usingComponents": {
     "van-icon": "/ui-plugins/vant/icon/index",
     "van-button": "/ui-plugins/vant/button/index",

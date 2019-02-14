@@ -8,7 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    username: app.UserLogin.get('userInfo').mobile
+    username: ''
   },
 
   loginout() {
@@ -30,7 +30,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // console.log(app.UserLogin.get('userInfo'));
+    this.setData({
+      username: app.UserLogin.get('userInfo').mobile
+    })
   },
 
   /**
@@ -44,7 +47,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**
