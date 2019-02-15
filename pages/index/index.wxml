@@ -38,7 +38,7 @@
           </view>
           <view class='order_footer'>
             <view class='font-w6'>已付金额：
-              <text class='c-red'>¥180.00</text>
+              <text class='c-red'>¥{{item.paymentAmount}}</text>
             </view>
             <view class='but_box'>
               <button data-orderno="{{item.orderNo}}" data-status="4" data-msg="操作成功" bindtap='editOrderStatus'  wx:if="{{ searchForm.status === '3' }}" class='but_question'>加入洗衣</button>

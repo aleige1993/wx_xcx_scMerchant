@@ -7,11 +7,11 @@
          <view  class='login-box'>
             <view  class='login-cell'>
                 <icon class='iconfont icon-shouji01'></icon>
-                <input type='text' placeholder='手机号码'  name="account" value="18888888889"></input>
+                <input type='text' placeholder='手机号码'  name="account" value=""></input>
             </view>
             <view class='login-cell'>
                 <icon class='iconfont icon-mima'></icon>
-                <input password placeholder='输入密码' name="password" value='111111'></input>
+                <input password placeholder='输入密码' name="password" value=''></input>
             </view>
             </view>
             <view class='marig-primary'>
