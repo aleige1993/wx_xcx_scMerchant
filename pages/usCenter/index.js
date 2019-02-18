@@ -1,18 +1,48 @@
 // pages/usCenter/index.js
+let app = getApp();
+import Dialog from '../../ui-plugins/vant/dialog/dialog';
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    username: '',
+    stationList: []
+  },
 
+  loginout() {
+    Dialog.confirm({
+      title: '提示',
+      message: '确定要退出当前账号？'
+    }).then(() => {
+      // on confirm
+      app.UserLogin.remove('userInfo');
+      wx.redirectTo({
+        url: '/pages/login/index'
+      })
+    }).catch(() => {
+      // on cancel
+    });
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // console.log(app.UserLogin.get('userInfo'));
+    this.setData({
+      username: app.UserLogin.get('userInfo').mobile
+    })
+    let _this = this;
+    app.Formdata.get('/openapi/express/wechatapplet/express/station/queryForServer', {}, function(res) {
+      if (res.success && res.success === 'true') {
+        _this.setData({
+          stationList: res.data
+        })
+      }
+    });
   },
 
   /**
@@ -26,7 +56,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**

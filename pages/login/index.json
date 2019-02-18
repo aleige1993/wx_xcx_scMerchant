@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "van-button": "/ui-plugins/vant/button/index"
+    "van-button": "/ui-plugins/vant/button/index",
+    "van-loading": "/ui-plugins/vant/loading/index"
   }
 }

@@ -167,15 +167,37 @@ overflow: hidden;
   margin-top: 58rpx;
 }
 .marig-primary{
-  margin:30rpx 0;
+  margin:30rpx 40rpx;
 }
-.primary{
+.marig-primary .button{
+  padding: 8rpx 0;
+  background: #3984FF;
+  color: #fff;
+}
+.marig-primary .button.disabled{
+  background: #D2D2D2;
+}
+/* .primary{
   width: 90%;
   margin:0 5%;
-}
+} */
 
 .fixed-bottom{
   position: fixed;
   bottom: 0;
   width:100%;
+}
+
+.null-data{
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+}
+.null-data.margin-top {
+  margin-top: 40%;
+}
+
+.null-data icon{
+    font-size: 100px;
+    color: #999;
 }

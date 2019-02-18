@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-      "van-checkbox": "/ui-plugins/vant/checkbox/index",
-    "van-checkbox-group": "/ui-plugins/vant/checkbox-group/index",
-    "van-stepper": "/ui-plugins/vant/stepper/index"
-  }
-}
