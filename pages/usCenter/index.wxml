@@ -2,9 +2,9 @@
 <view>
   <view class='us-img-box backg-grad'>
     <view class='box-user '>
-      <image src='../../static/images/error.png'></image>
+    <image bindtap='selectUserIcon'  src="{{userInfo.avatarUri ? userInfo.avatarUri : '../../static/images/hader.png'}}"></image>
       <view>
-        <text class='font-w6'>{{username}}</text>
+        <text class='font-w6'>{{userInfo.mobile}}</text>
         <!-- <text></text> -->
       </view>
     </view>

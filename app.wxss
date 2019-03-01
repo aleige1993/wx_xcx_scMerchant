@@ -194,10 +194,18 @@ overflow: hidden;
     font-size: 12px;
 }
 .null-data.margin-top {
-  margin-top: 40%;
+  margin-top: 20%;
 }
 
 .null-data icon{
     font-size: 100px;
     color: #999;
+}
+
+.back_view{
+    display:block;
+    flex-direction: column;
+}
+.decoration{
+    text-decoration:line-through;
 }

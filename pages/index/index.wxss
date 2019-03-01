@@ -114,5 +114,5 @@ page {
 
 .scan-code {
   width: 100%;
-  height: 200rpx;
+  height: 400rpx;
 }

@@ -1,4 +1,5 @@
 {
+    "navigationBarTitleText": "接单区域",
   "usingComponents": {
     "van-picker": "/ui-plugins/vant/picker/index",
     "van-popup": "/ui-plugins/vant/popup/index"

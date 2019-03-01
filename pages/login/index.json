@@ -1,4 +1,5 @@
 {
+"navigationBarTitleText": "商家登录",
   "usingComponents": {
     "van-button": "/ui-plugins/vant/button/index",
     "van-loading": "/ui-plugins/vant/loading/index"

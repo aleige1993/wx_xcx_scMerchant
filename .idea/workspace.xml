@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="640e4dc5-8b45-4100-8ff7-8bc3c987cece" name="默认" comment="洗衣订单列表">
+    <list default="true" id="640e4dc5-8b45-4100-8ff7-8bc3c987cece" name="默认" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/hader.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/saosao.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/tab_clothes_a.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/tab_clothes_b.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/car.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/dashboard-headnews.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/tab_home_a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/tab_home_b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/tab_work_a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/images/tab_work_b.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/tab_user_a.png" afterPath="$PROJECT_DIR$/static/images/tab_user_a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/images/tab_user_b.png" afterPath="$PROJECT_DIR$/static/images/tab_user_b.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.json" afterPath="$PROJECT_DIR$/app.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.wxss" afterPath="$PROJECT_DIR$/app.wxss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/index.js" afterPath="$PROJECT_DIR$/config/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/index/index.wxml" afterPath="$PROJECT_DIR$/pages/index/index.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/login/index.wxml" afterPath="$PROJECT_DIR$/pages/login/index.wxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/index/index.wxss" afterPath="$PROJECT_DIR$/pages/index/index.wxss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/login/index.json" afterPath="$PROJECT_DIR$/pages/login/index.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/login/register.json" afterPath="$PROJECT_DIR$/pages/login/register.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/login/resetPwd.json" afterPath="$PROJECT_DIR$/pages/login/resetPwd.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/usCenter/index.js" afterPath="$PROJECT_DIR$/pages/usCenter/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/usCenter/index.json" afterPath="$PROJECT_DIR$/pages/usCenter/index.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/usCenter/index.wxml" afterPath="$PROJECT_DIR$/pages/usCenter/index.wxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/usCenter/region/index.json" afterPath="$PROJECT_DIR$/pages/usCenter/region/index.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,7 +43,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/index/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
+            <state relative-caret-position="286">
               <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding />
             </state>
@@ -67,7 +89,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -76,10 +97,16 @@
               <item name="wx_xcx_scMerchant" type="b2602c69:ProjectViewProjectNode" />
               <item name="wx_xcx_scMerchant" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="wx_xcx_scMerchant" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wx_xcx_scMerchant" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -112,6 +139,8 @@
       <workItem from="1550043791333" duration="1516000" />
       <workItem from="1550123093332" duration="2842000" />
       <workItem from="1550221854102" duration="7000" />
+      <workItem from="1550458564919" duration="51000" />
+      <workItem from="1551409218877" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="加入登录  个人中心首页 洗衣扫码功能">
       <created>1550043852573</created>
@@ -134,20 +163,27 @@
       <option name="project" value="LOCAL" />
       <updated>1550135491270</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="更新">
+      <created>1550458599986</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1550458599986</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4406000" />
+    <option name="totallyTimeSpent" value="4470000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19714588" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19704953" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.333713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33407822" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -170,7 +206,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="加入登录  个人中心首页 洗衣扫码功能" />
     <MESSAGE value="洗衣订单列表" />
-    <option name="LAST_COMMIT_MESSAGE" value="洗衣订单列表" />
+    <MESSAGE value="更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -187,7 +224,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
           <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding />
         </state>

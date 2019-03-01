@@ -8,7 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    username: '',
+      userInfo: '',
     stationList: []
   },
 
@@ -26,14 +26,54 @@ Page({
       // on cancel
     });
   },
+    //点击上传头像
+    selectUserIcon() {
+        let _this = this;
+        wx.chooseImage({
+            count: 1,
+            success: function (res) {
+                app.Formdata.uploadFile(res, (path) => {
+                    console.log(path);
+                    if (path[0]) {
+                        _this.setData({
+                            'userInfo.avatarUri': path[0]
+                        })
+                        app.Formdata.post('/openapi/express/wechatapplet/express/manager/update', { avatarUri: path[0] }, (res) => {
+                            let title = '';
+                            if (res.code == '0000') {
+                                title = '上传成功';
+                            } else {
+                                title = '上传失败';
+                            }
+                            wx.showToast({
+                                title: title,
+                                icon: 'none'
+                            })
+                        })
 
+                    }
+
+                })
+            },
+        })
+    },
+    //获取用户
+    getUser(){
+        let _this = this;
+        app.Formdata.get('/openapi/express/wechatapplet/express/manager/detail', {}, function (res) {
+            if (res.success && res.success === 'true') {
+                _this.setData({
+                    userInfo: res.data
+                })
+            }
+        });
+    },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // console.log(app.UserLogin.get('userInfo'));
     this.setData({
-      username: app.UserLogin.get('userInfo').mobile
+        userInfo: app.UserLogin.get('userInfo')
     })
     let _this = this;
     app.Formdata.get('/openapi/express/wechatapplet/express/station/queryForServer', {}, function(res) {
@@ -43,6 +83,7 @@ Page({
         })
       }
     });
+      this.getUser();
   },
 
   /**

@@ -1,4 +1,5 @@
 {
+    "navigationBarTitleText": "修改密码",
   "usingComponents": {
     "van-steps": "/ui-plugins/vant/steps/index",
     "van-field": "/ui-plugins/vant/field/index",
