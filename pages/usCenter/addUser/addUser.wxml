@@ -1,0 +1,20 @@
+<!--pages/usCenter/addUser/addUser.wxml-->
+<view>
+  <form bindsubmit='submitForm'>
+    <!-- <view bindtap='selectUserIcon' class='user_up'>
+      <image src='{{userInfo.image}}'></image>
+      <view>点击头像上传</view>
+    </view> -->
+    <view>
+      <van-cell-group>
+       <van-field name="nickName" value="{{ userInfo.nickName }}" label="员工姓名" placeholder="请输入员工姓名" />
+        <van-field name="userName" value="{{ userInfo.userName }}" label="用户名" placeholder="请输入登录账号" />
+        <van-field name="mobile"  value="{{ userInfo.mobile }}" label="手机号" placeholder="请输入手机号" />
+        <van-field wx:if="{{type==1}}" name="pwd"  value="{{ userInfo.pwd }}" label="密码" placeholder="请输入密码" />
+      </van-cell-group>
+    </view>
+    <view class='marig-primary '>
+      <button form-type='submit' class='button' size="normal" type="primary" custom-class="primary">确定</button>
+    </view>
+  </form>
+</view>

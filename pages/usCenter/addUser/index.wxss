@@ -1,0 +1,35 @@
+/* pages/usCenter/addUser/index.wxss */
+page{
+  background-color: #f2f2f2;
+}
+.add_user_box{
+  display:flex;
+  padding: 30rpx;
+  background-color: #fff;
+  position: relative;
+  width:95%;
+  margin:20rpx auto; 
+  border-radius:5px; 
+}
+.add_user_box image{
+  width:150rpx;
+  height: 150rpx;
+  border-radius:100%; 
+}
+.add_user_box .us_view{
+  display: flex;
+  flex: 1;
+}
+.add_user_box .us_details{
+  display:flex;
+  margin-left: 20rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.add_user_box{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}

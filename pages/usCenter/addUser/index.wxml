@@ -1,0 +1,25 @@
+<!--pages/usCenter/addUser/index.wxml-->
+<view>
+  <view wx:for="{{userList}}" wx:key="{{index}}" class='add_user_box'>
+    <view class='us_view' data-items="{{item}}"  bindtap='goEdit'>
+      <image wx:if="{{item.avatarUri}}" src='{{item.avatarUri}}'></image>
+      <image wx:else src='../../../static/images/hader.png'></image>
+      <view class='us_details'>
+        <text>{{item.userName}}</text>
+        <text>{{item.mobile}}</text>
+         <text class='c-999'>状态：{{item.status == '1' ? '启用中':'关闭'}}</text>
+      </view>
+    </view>
+     <switch checked="{{item.status == '1'}}"   data-username="{{item.userName}}"  data-nickname="{{item.nickName}}"  data-memberno="{{item.memberNo}}" data-index="{{index}}" data-status="{{item.status}}"   data-mobile="{{item.mobile}}"   color="#3984ff" bindchange="switchChange" />
+    <!-- <icon data-index="{{index}}" data-mobile="{{item.mobile}}" bindtap='removeUser' class='iconfont icon-shibai del'></icon> -->
+  </view>
+
+  <view class='marig-primary'>
+    <navigator url='/pages/usCenter/addUser/addUser'>
+      <button class='button' size="normal" type="primary" custom-class="primary">+ 添加新员工</button>
+    </navigator>
+    <!-- <van-button size="normal" type="primary" custom-class="primary">+ 添加新员工</van-button> -->
+  </view>
+</view>
+
+<van-dialog id="van-dialog" />

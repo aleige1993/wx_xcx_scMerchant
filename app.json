@@ -1,32 +1,39 @@
 {
-  "pages": [
-    "pages/login/index",
-    "pages/index/index",
-    "pages/usCenter/index"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "商家服务",
-    "navigationBarTextStyle": "black"
-  },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "selectedIconPath": "/static/images/tab_clothes_b.png",
-        "iconPath": "/static/images/tab_clothes_a.png"
-      },
-      {
-        "pagePath": "pages/usCenter/index",
-        "text": "我的",
-        "selectedIconPath": "/static/images/tab_user_b.png",
-        "iconPath": "/static/images/tab_user_a.png"
-      }
+    "pages": [
+        "pages/login/index",
+        "pages/index/index",
+        "pages/usCenter/record/index",
+        "pages/usCenter/index",
+        "pages/usCenter/overRoder/index",
+        "pages/usCenter/addShelf/index",
+        "pages/usCenter/setUser/index",
+        "pages/usCenter/addUser/index",
+        "pages/usCenter/addUser/addUser"
     ],
-    "color": "#BFBFBF",
-    "selectedColor": "#3984ff",
-    "borderStyle": "white"
-  }
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "商家服务",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "selectedIconPath": "/static/images/tab_clothes_b.png",
+                "iconPath": "/static/images/tab_clothes_a.png"
+            },
+            {
+                "pagePath": "pages/usCenter/index",
+                "text": "我的",
+                "selectedIconPath": "/static/images/tab_user_b.png",
+                "iconPath": "/static/images/tab_user_a.png"
+            }
+        ],
+        "color": "#BFBFBF",
+        "selectedColor": "#3984ff",
+        "borderStyle": "white"
+    },
+    "sitemapLocation": "sitemap.json"
 }

@@ -156,3 +156,30 @@ page {
     justify-content: space-between;
     padding: 20rpx;
 }
+.laundry_box{
+    display: flex;
+    justify-content: space-between;
+    padding:30rpx 10rpx 0 10rpx;
+    
+}
+.timeAll{
+    display: flex;
+}
+.titleTime{
+    line-height: 60rpx;
+}
+.heng{
+    padding: 0 10rpx;
+    line-height: 60rpx;
+}
+.picker{
+    border-bottom:1px solid #06a5ff;
+    padding: 10rpx 30rpx; 
+}
+.conment{
+    color: #06a5ff;
+    font-weight: 600;
+    line-height: 60rpx;
+    font-size: 15px;
+    margin-left: 20rpx;
+}

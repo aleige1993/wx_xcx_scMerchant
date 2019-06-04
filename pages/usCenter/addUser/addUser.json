@@ -1,0 +1,9 @@
+{
+"navigationBarTitleText": "新增员工",
+  "usingComponents": {
+    "van-field": "/ui-plugins/vant/field/index",
+    "van-button": "/ui-plugins/vant/button/index",
+    "van-cell-group": "/ui-plugins/vant/cell-group/index"
+  }
+
+}

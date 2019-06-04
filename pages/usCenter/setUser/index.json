@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "小站设置",
+  "usingComponents": {
+    "van-cell-group": "/ui-plugins/vant/cell-group/index",
+    "van-cell": "/ui-plugins/vant/cell/index"
+  }
+  
+}

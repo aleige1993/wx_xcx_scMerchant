@@ -1,33 +1,82 @@
 <!--pages/usCenter/index.wxml-->
 <view>
-  <view class='us-img-box backg-grad'>
-    <view class='box-user '>
-    <image bindtap='selectUserIcon'  src="{{userInfo.avatarUri ? userInfo.avatarUri : '../../static/images/hader.png'}}"></image>
-      <view>
-        <text class='font-w6'>{{userInfo.mobile}}</text>
-        <!-- <text></text> -->
-      </view>
+    <view class='us-img-box backg-grad'>
+        <view class='box-user '>
+            <image bindtap='selectUserIcon' src="{{userInfo.avatarUri ? userInfo.avatarUri : '../../static/images/hader.png'}}"></image>
+            <view>
+                <text class='font-w6'>{{userInfo.mobile}}</text>
+                <!-- <text></text> -->
+            </view>
+        </view>
+        <!-- <icon class='iconfont icon-you1'></icon> -->
     </view>
-    <!-- <icon class='iconfont icon-you1'></icon> -->
-  </view>
 
-  <view>
-    <navigator class='glup_box'>
-      <view>
-        <!-- <icon class='iconfont icon-ico_meiyoushuju'></icon> -->
-        <text>洗衣范围</text>
-      </view>
-      <!-- <icon class='iconfont icon-you1'></icon> -->
-    </navigator>
-    <view wx:for="{{stationList}}" wx:key="{{index}}" class='glup_box'>
-      <text>{{item.stationName}} - {{item.address}}</text>
+    <view>
+   <view class='cash_panl' wx:if="{{quCount == 1}}">
+        <view class='cash_p1'>服务商余额：<text class='c-red'>￥{{userInfo.balance}}</text></view>
+        <view class='cash_p2'>
+            <view class='record' bindtap='goToback'>记录</view>
+             <view class='withdrawal  c-blue b-blue' bindtap='changDialog'>提现</view>
+        </view>
+   </view>    
+  <navigator   class='glup_box' url="/pages/usCenter/overRoder/index">
+            <view>
+                <!-- <icon class='iconfont icon-ico_meiyoushuju'></icon> -->
+                <text>洗衣订单完成记录</text>
+            </view>
+            <view>
+                <icon class='iconfont icon-you1'></icon>
+            </view>
+        </navigator>
+
+        <navigator wx:if="{{showAddUser}}" class='glup_box' url="/pages/usCenter/addShelf/index">
+            <view>
+                <!-- <icon class='iconfont icon-ico_meiyoushuju'></icon> -->
+                <text>衣物搁架设置</text>
+            </view>
+            <view>
+                <icon class='iconfont icon-you1'></icon>
+            </view>
+        </navigator>
+        <navigator wx:if="{{showAddUser}}" class='glup_box' url="/pages/usCenter/addUser/index">
+            <view>
+                <!-- <icon class='iconfont icon-ico_meiyoushuju'></icon> -->
+                <text>员工管理</text>
+            </view>
+            <view>
+                <icon class='iconfont icon-you1'></icon>
+            </view>
+        </navigator>
+
+
+        <navigator class='glup_box stationlist'>
+            <view>
+                <!-- <icon class='iconfont icon-ico_meiyoushuju'></icon> -->
+                <text>洗衣范围</text>
+            </view>
+            <!-- <icon class='iconfont icon-you1'></icon> -->
+        </navigator>
+        <view wx:for="{{stationList}}" wx:key="{{index}}" class='glup_box'>
+            <text>• {{item.stationName}} - {{item.address}}</text>
+        </view>
     </view>
-  </view>
 
-  <view class='marig-primary'>
-    <button bindtap='loginout' class="primary  backg-grad shadow-just" form-type='submit' size="normal">退出账号</button>
-  </view>
+    <!-- <view class='marig-primary'>
+        <button bindtap='loginout' class="primary  backg-grad shadow-just" form-type='submit' size="normal">退出账号</button>
+    </view> -->
 
 </view>
 
-<van-dialog id="van-dialog" />
+<van-dialog
+  use-slot
+  show="{{ showDialog }}"
+  show-cancel-button
+  bind:confirm="onConfirm"
+  bind:close="onClose"
+  bind:getuserinfo="getUserInfo"
+>
+    <view class='model_panl'>
+        <view class='mod_titel'>提现申请</view>
+        <input placeholder='请输入提现金额' value='{{valMeny}}' type='digit' bindinput="onValMeny"></input>
+    </view> 
+</van-dialog> 

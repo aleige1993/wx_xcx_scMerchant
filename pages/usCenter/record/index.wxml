@@ -1,0 +1,31 @@
+<!--pages/usCenter/record/index.wxml-->
+<view class='record'>
+    <view class='chang_panl'>
+        <van-tabs active="{{ active }}" bind:change="onChange">
+            <van-tab title="审核中"> </van-tab>
+            <van-tab title="已提现"> </van-tab>
+        </van-tabs>
+    </view>
+    <scroll-view
+    scroll-y
+    style="height:100vh;"
+    scroll-y
+    bindscrolltoupper="upper"
+    bindscrolltolower="lower" 
+    scroll-into-view="{{toView}}"
+    scroll-top="{{scrollTop}}"
+  >
+    <view class='scorll_panl'>
+        <view class='meny_panl' wx:for="{{cordList}}" wx:key="cordList">
+            <view class='tittle'>
+                <label>{{item.type}}</label>
+                <text>{{item.gmtCreate}}</text>
+            </view>
+            <view class='numtext'>
+                {{item.amount}}
+            </view>
+        </view>
+    </view> 
+  </scroll-view>
+  
+</view>

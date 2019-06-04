@@ -45,3 +45,38 @@ page{
 .glup_box icon{
     margin-top: -10rpx;
 }
+.stationlist{
+    background-color: #f2f2f2;
+}
+.cash_panl{
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    padding:20rpx;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .cash_p2{
+        display: flex;
+    }
+    .cash_p2 view{
+        padding: 8rpx 30rpx;
+        margin-left: 20rpx;
+        border-radius:6rpx; 
+        font-size: 24rpx;
+    }
+    .record{
+        color: rgb(255, 153, 0);
+        border: 1px solid rgb(255, 153, 0);
+    }
+    .model_panl{
+        text-align: center;
+    }
+    .mod_titel{
+        font-size: 34rpx;
+        font-weight: 600;
+        margin: 20rpx 
+    }
+    .model_panl input{
+        margin-bottom: 20rpx;
+    }

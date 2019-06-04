@@ -1,0 +1,42 @@
+/* pages/usCenter/record/index.wxss */
+page{
+    background-color: #f2f2f2;
+}
+.chang_panl{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.scorll_panl{
+    margin-top: 90rpx;
+}
+.meny_panl{
+    background-color: #fff;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 20rpx 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tittle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 80rpx;
+}
+.tittle label{
+    font-weight: 700;
+    color: #414141;
+}
+.tittle text{
+    color: #999;
+    font-size: 24rpx;
+}
+.numtext{
+    font-size: 36rpx;
+    font-weight: 600;
+    color: rgb(204, 153, 102);
+}

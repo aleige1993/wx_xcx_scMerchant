@@ -9,9 +9,77 @@ Page({
    */
   data: {
       userInfo: '',
-    stationList: []
+    stationList: [],
+      showAddUser: false,
+      showDialog:false,
+      valMeny:null,
+      amount:10, 
+      quCount:'0'
   },
-
+  //是否显示提现
+    querySettleAccount(){
+        app.Formdata.post('/openapi/express/wechatapplet/express/settle/querySettleAccount',{},(res)=>{
+            if(res.code == '0000'){
+                this.setData({
+                    quCount:res.data
+                })
+            }
+        })
+    },
+//提现
+    changDialog(){
+        this.setData({
+            showDialog:true,
+            valMeny:null
+        })
+    },
+ //关闭
+    onClose(){
+        this.setData({
+            showDialog: false
+        })
+    }, 
+    onValMeny(e){
+       this.setData({
+           valMeny: e.detail.value
+       }) 
+    },  
+    //跳转
+    goToback(){
+        wx.navigateTo({
+            url: '/pages/usCenter/record/index',
+        })
+    },
+    //提现成功更新金额
+    getNewMoeny(){
+        app.Formdata.post('/openapi/express/wechatapplet/express/settle/queryBalance', { memberNo:'001'},(res)=>{
+            if(res.code == '0000'){
+                console.log(res.data);
+                this.setData({
+                    'userInfo.balance': res.data
+                })
+            }
+        })
+    },
+    //提交
+    onConfirm(){
+        let _this = this;
+        let vals = this.data.valMeny;
+        let amount = Number(this.data.userInfo.balance);
+            app.Formdata.post('/openapi/express/wechatapplet/express/settle/doSettle', { amount: vals},(res)=>{
+                if(res.code == '0000'){
+                    wx.showModal({
+                        title: '申请成功',
+                        content: '申请提现金额1~3小时内到账',
+                        showCancel:false,
+                        success(){
+                            _this.getNewMoeny();
+                        }
+                    })
+                }
+            })
+        // }
+    },
   loginout() {
     Dialog.confirm({
       title: '提示',
@@ -73,7 +141,8 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-        userInfo: app.UserLogin.get('userInfo')
+        userInfo: app.UserLogin.get('userInfo'),
+        showAddUser: app.UserLogin.get('userInfo').isParentServer == '1' ? true : false
     })
     let _this = this;
     app.Formdata.get('/openapi/express/wechatapplet/express/station/queryForServer', {}, function(res) {
@@ -84,6 +153,7 @@ Page({
       }
     });
       this.getUser();
+      this.querySettleAccount();
   },
 
   /**

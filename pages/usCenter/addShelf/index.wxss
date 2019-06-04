@@ -1,0 +1,52 @@
+/* pages/usCenter/addShelf/index.wxss */
+page{
+    background-color: #f2f2f2;
+}
+.shelf{
+    width: 100%;
+}
+.s_li{
+    display: flex;
+    justify-content: space-between;
+    padding: 30rpx;
+    background-color: #fff;
+    border-bottom:1px solid #eee; 
+}
+.s_li icon{
+    margin-top: -16rpx;
+    font-size: 20px;
+}
+.model_text{
+    width: 94%;
+    background-color: #fff;
+    border-radius:10rpx;
+    position: fixed;
+    top: 35%;
+    left: 3%;
+    z-index: 101; 
+}
+.model_text .title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 40rpx 0 40rpx 0;
+}
+.model_text input{
+    margin:0 20%;
+    border-bottom: 1px solid #eee;
+}
+.but_view{
+    display: flex;
+    border-top:1px solid #eee;
+    margin-top: 30rpx;
+}
+.but_view view{
+    width: 50%;
+    text-align: center;
+    line-height: 90rpx;
+}
+.but_view view:first-child{
+    border-right:1px solid #eee; 
+}
+
+

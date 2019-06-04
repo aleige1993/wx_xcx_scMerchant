@@ -24,7 +24,7 @@ let post = (url, data, callback) => {
       'appId': HTTPHEADER_APPID,
       'version': HTTPHEADER_APPVERSION,
       'sign': HTTPHEADER_APPSIGN,
-      'token': app.UserLogin.get('userInfo').token || ''
+        'token': app.UserLogin ? app.UserLogin.get('userInfo').token : ''
     },
     success(res) {
       let data = res.data;
@@ -66,7 +66,7 @@ let get = (url, data, callback) => {
       'appId': HTTPHEADER_APPID,
       'version': HTTPHEADER_APPVERSION,
       'sign': HTTPHEADER_APPSIGN,
-      'token': app.UserLogin.get('userInfo').token || ''
+        'token': app.UserLogin ? app.UserLogin.get('userInfo').token : ''
     },
     success(res) {
       let data = res.data;

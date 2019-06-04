@@ -1,0 +1,11 @@
+/* pages/usCenter/addUser/addUser.wxss */
+.user_up{
+  text-align: center;
+  padding:100rpx 0;
+  background-color:#fff;
+}
+.user_up image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100%;
+}

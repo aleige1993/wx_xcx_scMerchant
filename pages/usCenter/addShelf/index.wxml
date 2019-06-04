@@ -1,0 +1,23 @@
+<!--pages/usCenter/addShelf/index.wxml-->
+<view class='shelf'>
+    <view class='s_li'>
+        <view>衣物搁架设置</view>
+        <view class='c-blue'><icon class='iconfont icon-tianjia1' data-types="1" bindtap='openShow'></icon></view>
+    </view>
+      <view class='s_li' wx:for="{{shelfList}}" wx:key="shelt">
+        <view>搁架名称：{{item.name}}</view>
+        <view class='c-blue' data-types="2" data-items="{{item}}" bindtap='openShow'>编辑名称</view>
+    </view>
+    
+</view>
+
+
+<view class='layer' wx:if="{{isShow}}" bindtap='clerAll'></view>
+<view class='model_text' wx:if="{{isShow}}">
+    <view class='title'>{{types == 1?'添加搁架':'修改搁架'}}</view>
+    <input class='inout' value='{{inputName}}' placeholder='请输入搁架名称' bindinput="tapInput"></input>
+    <view class='but_view'>
+        <view class='c-666' bindtap='clerAll'>取消</view>
+        <view class='c-blue' bindtap='comfime'>确定</view>
+    </view>
+</view>

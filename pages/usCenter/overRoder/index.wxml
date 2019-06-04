@@ -1,17 +1,36 @@
 <!--index.wxml-->
 <view class="dashboard">
     <view class='laundry_box'>
-        <van-search value="{{ searchForm.productCode }}" placeholder="请输入洗衣编码/扫描二维码（条形码）" use-action-slot bind:search="onSearch" bind:change="onChange">
+        <!-- <van-search value="{{ searchForm.productCode }}" placeholder="请输入洗衣编码/扫描二维码（条形码）" use-action-slot bind:search="onSearch" bind:change="onChange">
             <view slot="action" bind:tap="onSearch">搜索</view>
-        </van-search>
-        <image class="scan-code" bindtap='scanCode' src='/static/images/saosao.png'></image>
+        </van-search> -->
+        <!-- <image class="scan-code" bindtap='scanCode' src='/static/images/saosao.png'></image> -->
+        <view class='titleTime'>筛选时间：</view>
+        <view class='timeAll'>
+            <view>
+                <picker mode="date" value="{{startTime}}" start="{{newTime}}" end="{{maxTime}}" bindchange="startChange">
+                    <view class="picker">
+                        {{startTime?startTime:'开始时间'}}
+                    </view>
+                </picker>
+            </view>
+            <text class='heng'>-</text>
+            <view>
+                <picker mode="date" value="{{endTime}}" start="{{startTime}}" end="{{maxTime}}" bindchange="endChange">
+                    <view class="picker">
+                        {{endTime?endTime:'结束时间'}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class='conment' bindtap='yesSbumit'>确定</view>
     </view>
     <view class='laundy_list'>
-        <van-tabs active="{{ tabStatusActive }}" bind:click="tabStatus">
+        <!-- <van-tabs active="{{ tabStatusActive }}" bind:click="tabStatus">
             <van-tab data-status="3" title="待清洗"></van-tab>
             <van-tab data-status="4" title="清洗中"></van-tab>
             <van-tab data-status="5" title="待归还"></van-tab>
-        </van-tabs>
+        </van-tabs> -->
 
         <view wx:if="{{ orderList &&  !orderList.length}}" class='laundry-list null-data margin-top'>
             <icon class='iconfont  icon-tiaobochuku'></icon>
@@ -27,14 +46,11 @@
                         <view>小站地址：{{item.stationAddr}}</view>
                         <view>小站电话：{{item.stationMobile}}</view>
                         <view>客人备注：{{item.memo ? item.memo : '暂无备注'}}</view>
+                        <view>归还时间：{{item.returnTime}}</view>
                     </view>
                     <view class='order_box'>
                         <view wx:for="{{item.orderGoods}}" wx:key="{{item.orderNo}}" wx:for-item="goodsItem" class='move_box'>
-                         <view class='action_panl'>
-                        <image src='{{goodsItem.picUrl}}'></image>
-                        <view class='activity' wx:if="{{goodsItem.isBindActivity == 1}}"><icon class='iconfont icon-huodong'></icon></view>
-                    </view>
-                            <!-- <image src='{{goodsItem.picUrl}}'></image> -->
+                            <image src='{{goodsItem.picUrl}}'></image>
                             <view class='order_vim'>
                                 <view>{{goodsItem.goodName}}</view>
                                 <view class='back_view'>
@@ -44,7 +60,6 @@
                             </view>
                             <view class='order_num'>
                                 <view>×{{goodsItem.num}}</view>
-                                <view class='c-red' wx:if="{{goodsItem.isCountActivity == 1}}">已参与活动</view>
                                 <view wx:if='{{searchForm.status == 4}}' class='c-green'>已清洗×{{goodsItem.cleanedNum}}</view>
                             </view>
                         </view>
@@ -62,17 +77,15 @@
                             <view>
                                 <picker bindchange="pickerChange" value="{{index}}" range="{{shelfList}}" range-key="name">
                                     <view data-index="{{itemindex}}" data-items="{{item}}" class="picker" bindtap='getItme'>
-                                        
-                                    {{item.serverShelf?item.serverShelf:'请选择搁架'}} 
-                                    <!-- _  {{item.shelfArr?item.shelfArr.name:'请选择搁架'}} -->
+                                        {{item.shelfArr?item.shelfArr.name:'请选择搁架'}}
                                     </view>
                                 </picker>
                             </view>
                         </view>
-                         <view class='slfle_box' wx:if="{{searchForm.status == 4}}">
+                        <view class='slfle_box' wx:if="{{searchForm.status == 4}}">
                             <view>存放搁架：</view>
                             <view>
-                                 {{item.serverShelf}}
+                                {{item.serverShelf}}
                             </view>
                         </view>
                     </view>
@@ -80,11 +93,11 @@
                         <view class='font-w6'>已付金额：
                             <text class='c-red'>¥{{item.paymentAmount}}</text>
                         </view>
-                        <view class='but_box'>
+                        <!-- <view class='but_box'>
                             <button data-orderno="{{item.orderNo}}" data-status="4" data-msg="操作成功" bindtap='editOrderStatus' wx:if="{{ searchForm.status === '3' }}" class='but_question'>加入洗衣</button>
 
                             <button data-orderno="{{item.orderNo}}" data-status="5" data-msg="操作成功" bindtap='editOrderStatus' wx:if="{{ searchForm.status === '4' && item.isAllClean ==  '1' }}" class='but_confirm'>归还小站</button>
-                        </view>
+                        </view> -->
                     </view>
                 </view>
 
