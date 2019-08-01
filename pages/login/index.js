@@ -37,6 +37,7 @@ Page({
       })
       if (res.success && res.success === 'true') {
         app.UserLogin.set('userInfo', res.data);
+        app.UserLogin.set('loginCode', { 'account': account, 'password': password });
         wx.switchTab({
           url: '/pages/index/index',
         })
@@ -62,7 +63,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+      if (app.UserLogin.get('loginCode')) {
+          this.setData({
+              account: app.UserLogin.get('loginCode').account,
+              password: app.UserLogin.get('loginCode').password
+          })
+      }
   },
 
   /**

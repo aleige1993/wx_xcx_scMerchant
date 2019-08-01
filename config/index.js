@@ -17,7 +17,7 @@ let OPEN_API = {
     HTTPOPENAPIURL: app.OPEN_API //切换域名
 }
 
-var CONFIG = OPEN_API; // 选取当前环境配置
+var CONFIG = OPEN_CONFIG; // 选取当前环境配置
 module.exports = {
   PAGE_SIZE: 10,
   HTTPHEADER_APPID: '100006',
